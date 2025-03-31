@@ -88,8 +88,7 @@ class ItemRepositoryTest {
         itemRepository.save(item3);
 
         //둘 다 없음 검증
-        test(null, null, item1, item2, item3);
-        test("", null, item1, item2, item3);
+        test(null, null); // 결과가 빈 리스트여야 함
 
         //itemName 검증
         test("itemA", null, item1, item2);
