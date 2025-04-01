@@ -25,9 +25,9 @@ public class V2Config {
     public ItemQueryRepositoryV2 itemQueryRepository() {
         return new ItemQueryRepositoryV2(em);
     }
-    @Bean
-    public ItemRepository itemRepository() {
-        return new JpaItemRepositoryV3(em);
-    }
+//    @Bean
+//    public ItemRepository itemRepository() {
+//        return new JpaItemRepositoryV3(em);
+//    }
 
 }
